@@ -29,7 +29,7 @@
   },
   "scripts": {
     "prebuild": "rimraf lib/*",
-    "build": "microbundle",
+    "build": "microbundle --format cjs,es --target node",
     "changelog": "conventional-changelog --config .changelogrc.js -i CHANGELOG.md -s -a",
     "postchangelog": "git add CHANGELOG.md",
     "cz": "git-cz",
